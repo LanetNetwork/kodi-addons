@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <addon
+    id="pvr.lanettv"
+    version="@VERSION@"
+    name="PVR Lanet TV Client"
+    provider-name="Lanet Network">
+  <requires>
+  <c-pluff version="0.1"/>
+  <import addon="xbmc.pvr" version="1.9.2"/>
+</requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="Kodi_LanetTV_nix64.so"
+    library_osx="Kodi_LanetTV_macOS.so"
+    library_wingl="Kodi_LanetTV_win32.dll"
+    library_windx="Kodi_LanetTV_win32.dll" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Lanet TV PVR Client</summary>
+    <summary lang="ru">Клиент PVR для Lanet TV</summary>
+    <summary lang="uk">Клієнт PVR для Lanet TV</summary>
+    <description lang="en">Lanet TV PVR Client</description>
+    <description lang="ru">Клиент PVR для Lanet TV</description>
+    <description lang="uk">Клієнт PVR для Lanet TV</description>
+    <disclaimer lang="en">In development</disclaimer>
+    <disclaimer lang="ru">В разработке</disclaimer>
+    <disclaimer lang="uk">У розробці</disclaimer>
+    <platform>all</platform>
+    <website>https://lanet.tv/</website>
+  </extension>
+  <extension point="xbmc.addon.repository" name="Ctrl.host Kodi Add-ons">
+    <info>@GIT@raw/latest/addons/addons.xml</info>
+    <checksum>@GIT@raw/latest/addons/addons.xml.md5</checksum>
+    <datadir zip="true">@GIT@tree/latest/addons</datadir>
+  </extension>
+</addon>

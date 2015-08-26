@@ -1,0 +1,6 @@
+addon.xml
+changelog.txt
+*.so
+*.pvr
+*.dll
+*.lib
