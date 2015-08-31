@@ -17,5 +17,4 @@ See the file COPYING for more information.
 
 ---------------------------------------------
 
-[Wiki](https://git.cryol.kiev.ua/kodi/kodi-pvr-lanettv/wikis/home)
 

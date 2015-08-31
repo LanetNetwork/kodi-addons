@@ -32,7 +32,7 @@ using namespace ADDON;
 PVRLanetTVData::PVRLanetTVData(void)
 {
 	m_iEpgStart = -1;
-	m_strDefaultIcon = std::string(GIT_PLUGIN_URL) + "raw/latest/addons/pvr.lanettv/icon.png";
+	m_strDefaultIcon = std::string(GIT_PLUGIN_URL) + "/theme/images/icon.png";
 	m_strDefaultMovie = "";
 
 	XBMC->Log(LOG_DEBUG, "%s - Start load data", __FUNCTION__);
@@ -183,7 +183,7 @@ PVR_ERROR PVRLanetTVData::GetEPGForChannel(ADDON_HANDLE handle, const PVR_CHANNE
 
 	time_t iLastEndTime = m_iEpgStart + 1;
 	int iAddBroadcastId = 0;
-	XBMC->Log(LOG_ERROR, "GetEPGForChannel start '%d' end '%d'", iStart, iEnd);
+	XBMC->Log(LOG_DEBUG, "GetEPGForChannel start '%d' end '%d'", iStart, iEnd);
 
 	for (unsigned int iChannelPtr = 0; iChannelPtr < m_channels.size(); iChannelPtr++)
 	{
@@ -202,7 +202,7 @@ PVR_ERROR PVRLanetTVData::GetEPGForChannel(ADDON_HANDLE handle, const PVR_CHANNE
 
 		bool parsedSuccess = epg_reader.parse(strChannelEPG, epg, false);
 		if (!parsedSuccess) {
-			XBMC->Log(LOG_DEBUG, "Unable to load epg file '%s':", epg_reader.getFormattedErrorMessages().c_str());
+			XBMC->Log(LOG_ERROR, "Unable to load epg file '%s':", epg_reader.getFormattedErrorMessages().c_str());
 			continue;
 		}
 		int iBroadCastId = 0;

@@ -32,7 +32,13 @@
 typedef intptr_t      ssize_t;
 #define _SSIZE_T_DEFINED
 #endif // !_SSIZE_T_DEFINED
-#include "dlfcn-win32.h"
+
+#if defined(BUILD_KODI_ADDON)
+	#include "platform/windows/dlfcn-win32.h"
+#else
+	#include "dlfcn-win32.h"
+#endif
+
 #define ADDON_DLL               "\\library.xbmc.addon\\libXBMC_addon" ADDON_HELPER_EXT
 #define ADDON_HELPER_EXT        ".dll"
 #else
@@ -55,8 +61,8 @@ typedef intptr_t      ssize_t;
 #define ADDON_HELPER_ARCH       "powerpc64-linux"
 #elif defined(__ARMEL__)
 #define ADDON_HELPER_ARCH       "arm"
-#elif defined(_MIPSEL)
-#define ADDON_HELPER_ARCH       "mipsel-linux"
+#elif defined(__mips__)
+#define ADDON_HELPER_ARCH       "mips"
 #else
 #define ADDON_HELPER_ARCH       "i486-linux"
 #endif

@@ -25,7 +25,6 @@
 
 #include "libXBMC_addon.h"
 #include "libXBMC_pvr.h"
-#include "libXBMC_gui.h"
 
 #define PVR_CLIENT_VERSION	"0.0.4"
 #define GIT_PLUGIN_URL    	"http://kodi.lanet.tv/"
@@ -39,5 +38,3 @@ extern std::string					g_strListPath;
 extern std::string					g_strLogoPath;
 extern ADDON::CHelper_libXBMC_addon *XBMC;
 extern CHelper_libXBMC_pvr          *PVR;
-
-

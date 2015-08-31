@@ -12,18 +12,12 @@ FOR /F "tokens=*" %%S IN ('dir /B "pvr.*"') DO (
     for /f "usebackq delims=" %%i in ("%CD%\..\src\lanettv\client.h") do (
             set "str=%%i"
             set "str1=!str:~8,18!"
-            set "str2=!str:~8,14!"
             IF !str1! == PVR_CLIENT_VERSION (
                 set VERSION=!str:~27!
             )
-            IF !str2! == GIT_PLUGIN_URL (
-                set GIT=!str:~27!
-            )
 
     )
-    set GIT=!GIT::=\:!
-    set GIT=!GIT:/=\/!
-    %SED% "s/@GIT@/!GIT!/;s/@VERSION@/!VERSION!/" addon.xml.in > addon.xml
+    %SED% "s/@VERSION@/!VERSION!/" addon.xml.in > addon.xml
     cd ..\..
 )
 

@@ -1,5 +1,5 @@
 SUBDIRS = \
-	pvr.lanettv
+	pvr.lanet.tv-isengard
 
 DIST_SUBDIRS = \
 	$(SUBDIRS)

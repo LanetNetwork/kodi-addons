@@ -1,6 +1,6 @@
 LIBS   = ../lib_json/libjsoncpp.la
-LIBDIR = ../../addons/pvr.lanettv
-LIB    = ../../addons/pvr.lanettv/$(ADDONNAME)
+LIBDIR = ../../addons/pvr.lanet.tv-isengard
+LIB    = ../../addons/pvr.lanet.tv-isengard/$(ADDONNAME)
 
 lib_LTLIBRARIES = liblanettvaddon.la
 
@@ -9,7 +9,7 @@ liblanettvaddon_la_SOURCES = \
 	client.h \
 	PVRLanetTVData.cpp \
 	PVRLanetTVData.h
-	
+
 liblanettvaddon_la_LDFLAGS = \
 	-avoid-version
 

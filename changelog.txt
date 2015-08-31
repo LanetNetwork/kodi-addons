@@ -1,4 +1,4 @@
-v0.0.4
+v0.0.4 - helix/isengard
 - rec.lanet.tv removed, not supported in lanet.tv api.
 - change api url, because lanet.tv update platform.
 - removed groups, old scheme is not supported in lanet.tv api
