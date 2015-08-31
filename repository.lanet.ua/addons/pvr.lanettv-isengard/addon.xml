@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <addon
-    id="pvr.lanet.tv-isengard"
+    id="pvr.lanettv-isengard"
     version="0.0.4"
     name="PVR Lanet TV Client for Isengard 15.x"
     provider-name="Lanet Network">
