@@ -1,7 +1,7 @@
 AC_CONFIG_MACRO_DIR([m4])
 
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT([kodi-pvr-lanettv], [0.0.3.1], [Anton Baranov])
+AC_INIT([kodi-pvr-lanettv], [0.0.4], [Lanet Network])
 
 AC_CONFIG_AUX_DIR(autotools)
 PREFIX_DEFAULT="/usr"
@@ -90,8 +90,8 @@ AC_SUBST(SOEXT)
 # Finally create all the generated files
 AC_OUTPUT([Makefile
           addons/Makefile
-          addons/pvr.lanettv/Makefile
-          addons/pvr.lanettv/addon.xml
+          addons/pvr.lanet.tv-isengard/Makefile
+          addons/pvr.lanet.tv-isengard/addon.xml
           src/Makefile
           src/lib_json/Makefile
           src/lanettv/Makefile])
