@@ -1,0 +1,22 @@
+v0.0.4 - helix/isengard
+- rec.lanet.tv removed, not supported in lanet.tv api.
+- change api url, because lanet.tv update platform.
+- removed groups, old scheme is not supported in lanet.tv api
+- update windows build scripts
+- update addon.xml
+- change git url
+
+v0.0.3 rc1
+- Full refactoring code.
+- Add records for 2 last days from http://rec.lanet.tv.
+- move to Kodi platform (dont work on XBMC)
+
+v0.0.2
+- change XML to JSON.
+- Refactoring code.
+- Rewritten loading STV.
+- Removed unused functions.
+- Fixed some cases crash.
+
+v0.0.1
+- devel start.
