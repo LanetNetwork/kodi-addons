@@ -1,6 +1,6 @@
 LIBS   = ../lib_json/libjsoncpp.la
-LIBDIR = ../../addons/pvr.lanet.tv-isengard
-LIB    = ../../addons/pvr.lanet.tv-isengard/$(ADDONNAME)
+LIBDIR = ../../addons/pvr.lanettv-isengard
+LIB    = ../../addons/pvr.lanettv-isengard/$(ADDONNAME)
 
 lib_LTLIBRARIES = liblanettvaddon.la
 

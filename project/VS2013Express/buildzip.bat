@@ -56,12 +56,12 @@ ECHO ------------------------------------------------------------
 ECHO Compiling Addon for Kodi...
 %NET% %OPTS_EXE%
 
-IF EXIST ..\..\addons\pvr.lanet.tv-isengard\changelog.txt del ..\..\addons\pvr.lanet.tv-isengard\changelog.txt > NUL
-IF EXIST ..\..\addons\pvr.lanet.tv-isengard\addon.xml del ..\..\addons\pvr.lanet.tv-isengard\addon.xml > NUL
+IF EXIST ..\..\addons\pvr.lanettv-isengard\changelog.txt del ..\..\addons\pvr.lanettv-isengard\changelog.txt > NUL
+IF EXIST ..\..\addons\pvr.lanettv-isengard\addon.xml del ..\..\addons\pvr.lanettv-isengard\addon.xml > NUL
 
 SET BuildXML="%~dp0ConfigureAddonXML.bat"
 CALL %BuildXML%
-copy ..\..\changelog.txt ..\..\addons\pvr.lanet.tv-isengard\changelog.txt > NUL
+copy ..\..\changelog.txt ..\..\addons\pvr.lanettv-isengard\changelog.txt > NUL
 SETLOCAL DISABLEDELAYEDEXPANSION
 
 
@@ -72,9 +72,9 @@ IF NOT EXIST %ZIP% (
 )
 for /F %%a in (%VERSION%) do SET "VERSION=%%a"
 
-IF EXIST ..\..\pvr.lanet.tv-isengard.%VERSION%.zip del  ..\..\pvr.lanet.tv-isengard.%VERSION%.zip > NUL
+IF EXIST ..\..\pvr.lanettv-isengard.%VERSION%.zip del  ..\..\pvr.lanettv-isengard.%VERSION%.zip > NUL
 
-%ZIP% a ..\..\pvr.lanet.tv-isengard.%VERSION%.zip ..\..\addons\pvr.lanet.tv-isengard -xr!*.in -xr!*.am -xr!*.exp -xr!*.ilk -xr!*.pdb -xr!*.lib -xr!.gitignore >NUL
+%ZIP% a ..\..\pvr.lanettv-isengard.%VERSION%.zip ..\..\addons\pvr.lanettv-isengard -xr!*.in -xr!*.am -xr!*.exp -xr!*.ilk -xr!*.pdb -xr!*.lib -xr!.gitignore >NUL
 
 goto END
 
@@ -88,7 +88,7 @@ goto END
 :END
 IF %promptlevel% NEQ noprompt (
 ECHO ---------------------------------------------------------------
-ECHO The file 'pvr.lanet.tv-isengard.%VERSION%.zip' was created in the root fork directory.
+ECHO The file 'pvr.lanettv-isengard.%VERSION%.zip' was created in the root fork directory.
 ECHO ---------------------------------------------------------------
 ECHO Press any key to exit...
 pause > NUL

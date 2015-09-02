@@ -34,7 +34,7 @@ ISAPPLE=false
 
 case $host in
   *-*-cygwin* | *-*-mingw32*)
-    AC_LIBTOOL_WIN32_DLL
+$    AC_LIBTOOL_WIN32_DLL
     LDFLAGS+="-no-undefined -no-cygwin"
     OS="wingl windx"
     ISMINGW32=true
@@ -90,8 +90,8 @@ AC_SUBST(SOEXT)
 # Finally create all the generated files
 AC_OUTPUT([Makefile
           addons/Makefile
-          addons/pvr.lanet.tv-isengard/Makefile
-          addons/pvr.lanet.tv-isengard/addon.xml
+          addons/pvr.lanettv-isengard/Makefile
+          addons/pvr.lanettv-isengard/addon.xml
           src/Makefile
           src/lib_json/Makefile
           src/lanettv/Makefile])

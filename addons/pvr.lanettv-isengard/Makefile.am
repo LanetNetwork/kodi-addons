@@ -1,4 +1,4 @@
-addondir = $(prefix)/addons/pvr.lanet.tv-isengard
+addondir = $(prefix)/addons/pvr.lanettv-isengard
 addon_DATA = \
 	addon.xml \
 	$(ADDONNAME) \

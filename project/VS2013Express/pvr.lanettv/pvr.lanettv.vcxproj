@@ -42,14 +42,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\..\addons\pvr.lanet.tv-isengard\</OutDir>
+    <OutDir>..\..\..\addons\pvr.lanettv-isengard\</OutDir>
     <TargetName>Kodi_LanetTV_win32</TargetName>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>..\..\..\include\;..\..\..\include\kodi\;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath);</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\..\addons\pvr.lanet.tv-isengard\</OutDir>
+    <OutDir>..\..\..\addons\pvr.lanettv-isengard\</OutDir>
     <TargetName>Kodi_LanetTV_win32</TargetName>
     <TargetExt>.dll</TargetExt>
     <IncludePath>..\..\..\include\;..\..\..\include\kodi\;$(IncludePath)</IncludePath>
